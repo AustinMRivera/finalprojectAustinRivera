@@ -1,0 +1,21 @@
+Self-Reflection on Final Project
+
+For this project, I built a network monitoring app in Python using Flask and other basic libraries. It aligns with my computer networking concentration by focusing on device discovery, ping monitoring, and data enrichment via API.
+
+What Worked Well:
+- The scanning logic using subprocess for pings was straightforward and reliable for local networks.
+- Integrating SQLite helped with persisting data, allowing historical views, which added value.
+- The dashboard came out clean with Bootstrap, and adding Chart.js for simple line charts was a good way to visualize ping times without too much complexity.
+- Email alerts via smtplib worked as a basic notification system.
+
+Challenges and Improvements from Feedback:
+- Based on the professor's feedback to make it robust, I expanded from the outline by adding features like device naming and charts. This made it feel more complete, but I had to debug API errors for private IPs (they return 'bogon' which I handle by showing a message).
+- One issue was parsing ping output consistently across OSes; I added try-except to gracefully handle it.
+- The app handles errors like bad API tokens or failed pings without crashing, showing user-friendly messages.
+
+Lessons Learned:
+- Modularizing code (separate files for scanning, DB, API) made it easier to maintain and debug.
+- Working with networking concepts like subnets and pings reinforced class topics.
+- For future, I'd add user auth for the admin part or real-time updates, but that might be overkill here.
+
+Overall, this project demonstrates practical networking monitoring while being efficient in code. I'd rate my implementation as solid for the course level.
