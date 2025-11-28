@@ -6,7 +6,7 @@
 A simple tool to monitor devices on a local network, detect connectivity issues, and provide alerts.
 
 ## Description
-This project is a Python-based network monitoring app that is designed for small networks, such as home or small office setups. It scans the local network for connected devices using ping, tracks response times, uses data with IP details from an external API, stores historical data in a SQLite database, and displays results via a web dashboard built with Flask. Additional features include email alerts for device status changes, device naming for better identification, and basic charts for viewing ping history. The purpose is to help users identify and troubleshoot network problems, aligning with computer networking concepts.
+This project is a Python-based network monitoring app that is designed for small networks, such as home or small office setups. It scans the local network for connected devices using ping, tracks response times, uses data with IP details from an external API, stores historical data in a SQLite database, and displays results via a web dashboard built with Flask. Additional features include email alerts for device status changes, device naming for better identification, and basic charts for viewing ping history. The purpose is to help users identify and troubleshoot network problems, aligning with computer networking concepts. See self_reflection.txt for further thoughts.
 
 ## Getting Started
 ### Dependencies
