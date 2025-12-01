@@ -25,7 +25,7 @@ def ping_ip(ip):
         start = time.time()
         output = subprocess.check_output(['ping', '-c', '1', '-W', '1', ip])
         duration = time.time() - start
-        # Parse RTT from output
+        # Gather round trip time
         match = re.search(r'time=(\d+\.?\d*) ms', output.decode())
         rtt = float(match.group(1)) if match else duration * 1000  # Approx ms
         return 'online', rtt
@@ -65,4 +65,4 @@ def send_alert(ip):
         server.sendmail(EMAIL_SENDER, EMAIL_RECEIVER, msg.as_string())
         server.quit()
     except Exception as e:
-        print(f"Alert failed: {e}")  # Log, don't crash
+        print(f"Alert failed: {e}")  # Log to preventt crashing
