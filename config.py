@@ -1,5 +1,4 @@
-# Configuration file - keep sensitive info here (don't commit to Git in real projects)
-
+# Configuration file - keep sensitive info here, but not committing with my personal infrmation and token.
 IPINFO_TOKEN = 'your_ipinfo_token_here'  # Get from ipinfo.io
 
 EMAIL_SENDER = 'your_email@gmail.com'
