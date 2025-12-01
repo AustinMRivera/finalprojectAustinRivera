@@ -1,21 +1,20 @@
 Self-Reflection on Final Project
 
-For this project, I built a network monitoring app in Python using Flask and other basic libraries. It aligns with my computer networking concentration by focusing on device discovery, ping monitoring, and data enrichment via API.
+For my final project, I created a small network-monitoring app in Python using Flask and a few basic libraries. It fits well with my networking concentration because it focuses on finding devices on a network, checking their ping status, and pulling extra details from an API.
 
-What Worked Well:
-- The scanning logic using subprocess for pings was straightforward and reliable for local networks.
-- Integrating SQLite helped with persisting data, allowing historical views, which added value.
-- The dashboard came out clean with Bootstrap, and adding Chart.js for simple line charts was a good way to visualize ping times without too much complexity.
-- Email alerts via smtplib worked as a basic notification system.
+What Went Well
+- Using SQLite made it easy to save results so I could view older data.
+- The dashboard turned out nice using Bootstrap, and Chart.js let me show simple ping graphs without making things complicated.
+- Basic email alerts through smtplib worked well enough for notifications.
 
-Challenges and Improvements from Feedback:
-- Based on the professor's feedback to make it robust, I expanded from the outline by adding features like device naming and charts. This made it feel more complete, but I had to debug API errors for private IPs (they return 'bogon' which I handle by showing a message).
-- One issue was parsing ping output consistently across OSes; I added try-except to gracefully handle it.
-- The app handles errors like bad API tokens or failed pings without crashing, showing user-friendly messages.
+Challenges and Feedback
+- After the suggestion of ensuring it was more robust, I added a few extra features, like device names and charts. These additions helped, but I ran into issues with the API returning useless info for private IPs. I ended up handling that by showing a clear message instead of an error.
+- Ping output isn’t always the same across operating systems, so I added try-except blocks to avoid crashes.
+- I also made sure the app could handle things like bad API keys or failed pings without breaking, and instead show a message.
 
-Lessons Learned:
-- Modularizing code (separate files for scanning, DB, API) made it easier to maintain and debug.
-- Working with networking concepts like subnets and pings reinforced class topics.
-- For future, I'd add user auth for the admin part or real-time updates, but that might be overkill here.
+What I Learned
+- Splitting the code into separate files for scanning, the database, and the API made the project easier to work with.
+- It is important to plan out what you are going to do before just jumping in to save time in the long run.
+- Real data is messy; dealing with real data does not always come across clean.
 
-Overall, this project demonstrates practical networking monitoring while being efficient in code. I'd rate my implementation as solid for the course level.
+Overall, this project provided great additional hands-on experience that will be very valuable to have in this field.
