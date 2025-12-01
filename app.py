@@ -12,7 +12,7 @@ init_db()
 def dashboard():
     """Main dashboard showing latest scans."""
     scans = get_latest_scans()
-    # Simple sort by IP, or filter if query param
+    # Simple sort by IP or filter
     filter_status = request.args.get('filter', '')
     if filter_status:
         scans = [s for s in scans if s[1] == filter_status]
