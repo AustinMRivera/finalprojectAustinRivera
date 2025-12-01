@@ -25,7 +25,7 @@ This project is a Python-based network monitoring app that is designed for small
 * Click "Run Scan" on the dashboard to start monitoring.
 
 ## Help
-If the API token is invalid—error messages will appear in the console. Email alerts may fail due to SMTP settingss.
+If the API token is invalid, error messages will appear in the console. Email alerts may fail due to SMTP settingss.
 
 ## Authors
 Austin Rivera amrivera5@mail.fhsu.edu
@@ -36,3 +36,6 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 ## Acknowledgments
 * Flask documentation for web framework guidance.
 * ipinfo.io API for IP data.
+* Lots of tips learned from Arjan Codes. https://www.youtube.com/@ArjanCodes
+* Professor Zeller Lectures for INF 601 provided lots of knowledge. https://www.youtube.com/playlist?list=PLE5nOs3YmC2TeLcNOxFXKCzVfGb6MJri4
+* Lots of knowledge gained from Programming with Mosh as well. https://www.youtube.com/@programmingwithmosh
