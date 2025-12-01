@@ -26,7 +26,6 @@ This project is a Python-based network monitoring app that is designed for small
 
 ## Help
 If the API token is invalid—error messages will appear in the console. Email alerts may fail due to SMTP settingss.
-python app.py --debug  # Run in debug mode for more logs if needed
 
 ## Authors
 Austin Rivera amrivera5@mail.fhsu.edu
